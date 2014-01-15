@@ -1,0 +1,34 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/test/spec/controllers/app.js" />
+        <item url="file://$PROJECT_DIR$/app/bower_components/angular-inview/angular-inview.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/controllers/about.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/controllers/work.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/controllers/contact.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/controllers/platform.js" />
+        <item url="file://$PROJECT_DIR$/app/bower_components/angular-inview/test/angular-inview.spec.js" />
+        <item url="file://$PROJECT_DIR$/app/scripts/directives/scrollspy.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/scripts/directives/spy.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/directives/spy.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/controllers/work.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/controllers/app.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/controllers/about.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/controllers/contact.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/controllers/platform.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/controllers/app.js" />
+      <root url="file://$PROJECT_DIR$/app/bower_components/angular-inview/angular-inview.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/controllers/about.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/controllers/work.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/controllers/contact.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/controllers/platform.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/directives/scrollspy.js" />
+      <root url="file://$PROJECT_DIR$/app/bower_components/angular-inview/test/angular-inview.spec.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
