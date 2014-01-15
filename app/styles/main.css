@@ -1,0 +1,100 @@
+@import url(/app/bower_components/sass-bootstrap/dist/css/bootstrap.css);
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* Space out content a bit */
+.fullpage {
+  padding-top: 80px; }
+  .fullpage.horiz {
+    float: left; }
+
+.big-content {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+  background: rgba(255, 255, 255, 0.5); }
+
+.current {
+  color: rgba(30, 60, 90, 0.5);
+  font-weight: 400; }
+
+.current.ng-enter {
+  left: 100%; }
+
+.current.ng-enter,
+.ng-enter-active {
+  left: 0;
+  transition-duration: 0.5s; }
+
+.current.ng-leave,
+.current.ng-leave-active {
+  left: -100%; }
+
+#header {
+  background: #56afcd; }
+  #header .container ul {
+    padding-left: 5px;
+    background: #fff; }
+    #header .container ul li {
+      display: inline-block;
+      padding-left: 15px; }
+      #header .container ul li:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: rgba(30, 60, 90, 0.5);
+        font-weight: 400; }
+      #header .container ul li:first-of-type {
+        padding-top: 10px; }
+
+#home {
+  background: #235fd1; }
+
+#about {
+  background: #d43f3a; }
+
+#team1,
+#team2,
+#team3,
+#team4,
+#team5 {
+  background: #f8c3a2; }
+
+#platform {
+  background: #dea453; }
+
+#work {
+  background: #9cece2; }
+
+#contact {
+  background: #4daf9b; }
+
+#footer {
+  position: relative;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  background: #fafe31;
+  padding-bottom: 50px; }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container {
+    max-width: 730px; }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px; }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0; } }

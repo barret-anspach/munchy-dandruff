@@ -1,0 +1,61 @@
+<div scroll-spy in-view-container>
+
+    <div id="header">
+        <div class="container">
+            <ul class="nav navbar-fixed-top" role="navigation">
+                <li spy="home" ng-click="scrollTo('home')"><h4>Home</h4></li>
+                <li spy="about" ng-click=scrollTo('about')><h4>About</h4></li>
+                <li spy="platform" ng-click=scrollTo('platform')><h4>Platform</h4></li>
+                <li spy="work" ng-click=scrollTo('work')><h4>Work</h4></li>
+                <li spy="contact" ng-click=scrollTo('contact')><h4>Contact</h4></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="home" class="fullpage" in-view="panelInView('home', $inview, $inviewpart, $thisinview)" background="h">
+        <div class="container">
+            <h1>Home</h1>
+            <p class="lead">This note is just to note that I've resized each of the following "pages" to the browser window's dimensions. Pretty cool, huh?</p>
+            <div class="big-content"></div>
+        </div>
+    </div>
+
+    <div id="about" class="fullpage" background="h" panel-in-view>
+        <div class="container">
+            <h1>About</h1>
+            <p class="lead">This note is just to note that I've resized each of the following "pages" to the browser window's dimensions. Pretty cool, huh?</p>
+            <div class="big-content"></div>
+        </div>
+    </div>
+
+    <div id="platform" class="fullpage" in-view="panelInView('platform', $inview, $inviewpart, $thisinview)" background="h">
+        <div class="container">
+            <h1>Platform</h1>
+            <p class="lead">This note is just to note that I've resized each of the following "pages" to the browser window's dimensions. Pretty cool, huh?</p>
+            <div class="big-content"></div>
+        </div>
+    </div>
+
+    <div id="work" class="fullpage" in-view="panelInView('work', $inview, $inviewpart, $thisinview)" background="h">
+        <div class="container">
+            <h1>Work</h1>
+            <p class="lead">This note is just to note that I've resized each of the following "pages" to the browser window's dimensions. Pretty cool, huh?</p>
+            <div class="big-content"></div>
+        </div>
+    </div>
+
+    <div id="contact" class="fullpage" in-view="panelInView('contact', $inview, $inviewpart, $thisinview)" background="h">
+        <div class="container">
+            <h1>Contact</h1>
+            <p class="lead">This note is just to note that I've resized each of the following "pages" to the browser window's dimensions. Pretty cool, huh?</p>
+            <div class="big-content"></div>
+        </div>
+    </div>
+    <div id="footer" bottom>
+        <div class="container">
+            <h1>Footer</h1>
+        </div>
+    </div>
+
+</div>
