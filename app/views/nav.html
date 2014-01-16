@@ -1,0 +1,39 @@
+<div class="at-navbar">
+    <div class="at-navbar-wrapper" ng-class="{ home: $state.is('home') }">
+        <div class="at-navbar-banner">
+            <header class="at-navbar-header at-inline">
+                <a ui-sref="home" ng-click="">
+                    <div class="logo" background="../images/artifact-logo.png" size="cover"></div>
+                    Artifact <span class="thin">Technologies</span><span class="trade">&trade;</span>
+                </a>
+            </header>
+            <span ng-class="{ home: $state.is('home') }">
+                <nav class="at-navbar-main at-inline" ng-class="{ home: $state.is('home') }">
+                    <a ui-sref="about.main" ng-class="{ active: $state.includes('about') }">About Us</a>
+                    <a ui-sref="platform.main" ng-class="{ active: $state.includes('platform') }">Our Platform</a>
+                    <a ui-sref="work.main" ng-class="{ active: $state.includes('work') }">Our Work</a>
+                    <a ui-sref="contact" ng-class="{ active: $state.includes('contact') }">Contact Us</a>
+                </nav>
+            </span>
+        </div>
+    </div>
+    <div class="at-subnav-wrapper" ng-class="{ home: $state.is('home') }">
+        <div class="at-subnav">
+            <nav class="at-navbar-subnav" ng-show="$state.includes('about')">
+                <a ui-sref="about.team.1" ng-class="{ active: $state.includes('about.team') }">The Team</a>
+                <a ui-sref="about.investors.1" ng-class="{ active: $state.includes('about.investors') }">The Investors</a>
+                <a ui-sref="about.advisory.1" ng-class="{ active: $state.includes('about.advisory') }">The Advisory Board</a>
+            </nav>
+            <nav class="at-navbar-subnav" ng-show="$state.includes('platform')">
+                <a ui-sref="platform.curation" ng-class="{ active: $state.is('platform.curation') }">Curation</a>
+                <a ui-sref="platform.creation" ng-class="{ active: $state.is('platform.creation') }">Creation</a>
+                <a ui-sref="platform.commerce" ng-class="{ active: $state.is('platform.commerce') }">Commerce</a>
+                <a ui-sref="platform.analysis" ng-class="{ active: $state.is('platform.analysis') }">Analysis</a>
+            </nav>
+            <nav class="at-navbar-subnav" ng-show="$state.includes('work')">
+                <a ui-sref="work.fonograf" ng-class="{ active: $state.is('work.fonograf') }">Fonograf</a>
+                <a ui-sref="work.lens" ng-class="{ active: $state.is('work.lens') }">Whidbey LENS</a>
+            </nav>
+        </div>
+    </div>
+</div>

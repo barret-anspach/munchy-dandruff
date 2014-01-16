@@ -2,6 +2,30 @@
 
 var app = angular.module('fullpageApp');
 
+    app.directive('backgroundImg', function () {
+
+        return function (scope, element, attrs) {
+            attrs.$observe('backgroundImg', function(value) {
+                console.log(attrs.position);
+                if(!attrs.position) {
+                    scope.position = 'center center';
+                    console.log(scope.position);
+                }
+                else {
+                    scope.position = attrs.position;
+                }
+                element.css({
+                    'background-image': 'url(' + value + ')',
+                    'background-size': attrs.size,
+                    'background-position': scope.position,
+                    'background-repeat': 'no-repeat'
+                })
+            });
+
+        }
+    });
+
+
     app.directive('background', function () {
         return {
 //            template: '<div></div>',
@@ -27,6 +51,17 @@ var app = angular.module('fullpageApp');
         }
     });
 
+//    app.directive('bottom', function() {
+//       return {
+//           restrict: 'A',
+//           link: function postLink(scope, element, attrs) {
+//               attrs.$observe('bottom', function() {
+//                   })
+//               })
+//           }
+//       }
+//    });
+
     app.directive('horizontalBkgdContainer', function () {
         return {
 //            template: '<div></div>',
@@ -51,19 +86,19 @@ var app = angular.module('fullpageApp');
             restrict: 'A',
             link: function postLink(scope, element, attrs) {
                 var windowEl = angular.element($window);
-                var element = $(element)
-                console.log(element);
+                var el = $(element);
+                console.log(el);
 
                 windowEl.on('scroll', function(){
-                    var top = element.offset;
-                    var left = element.offset;
-                    var width = element.width;
-                    var height = element.height;
+                    var top = el.offset;
+                    var left = el.offset;
+                    var width = el.width;
+                    var height = el.height;
 
-                    while(element.offsetParent) {
-                        element = element.offsetParent;
-                        top += element.offsetTop;
-                        left += element.offsetLeft;
+                    while(el.offsetParent) {
+                        el = el.offsetParent;
+                        top += el.offsetTop;
+                        left += el.offsetLeft;
                     }
 
                     var inView = (

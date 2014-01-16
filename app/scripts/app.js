@@ -61,6 +61,11 @@ angular.module('fullpageApp', [
             })
     })
 
+    .run(function ($rootScope, $state, $stateParams) {
+        $rootScope.$state = $state;
+        $rootScope.$stateParams = $stateParams;
+    })
+
     .controller('AppCtrl', function($scope, $state, $location, $anchorScroll) {
         $scope.$state = $state;
 //        console.log($location.hash());
@@ -72,4 +77,4 @@ angular.module('fullpageApp', [
 //        $scope.$watch($location.hash(), function(newVal){
 //            console.log(newVal);
 //        })
-    })
+    });
