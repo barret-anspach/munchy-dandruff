@@ -2,15 +2,19 @@ angular.module('fullpageApp').directive 'spy', ($location) ->
 	restrict: "A"
 	require: "^scrollSpy"
 	link: (scope, elem, attrs, scrollSpy) ->
-		attrs.spyClass ?= "current"
+		attrs.spyClass ?= "active"
 
 		elem.click ->
 			scope.$apply ->
 				$location.hash(attrs.spy)
+				$anchorScroll()
 
 		scrollSpy.addSpy
 			id: attrs.spy
-			in: -> elem.addClass attrs.spyClass,
+			in: ->
+				scope.$apply ->
+					$location.hash(attrs.spy)
+				elem.addClass attrs.spyClass
 			out: -> elem.removeClass attrs.spyClass
 
 angular.module('fullpageApp').directive 'scrollSpy', ($window) ->

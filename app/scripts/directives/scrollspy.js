@@ -6,16 +6,20 @@
       require: "^scrollSpy",
       link: function(scope, elem, attrs, scrollSpy) {
         if (attrs.spyClass == null) {
-          attrs.spyClass = "current";
+          attrs.spyClass = "active";
         }
         elem.click(function() {
           return scope.$apply(function() {
-            return $location.hash(attrs.spy);
+            $location.hash(attrs.spy);
+            return $anchorScroll();
           });
         });
         return scrollSpy.addSpy({
           id: attrs.spy,
           "in": function() {
+            scope.$apply(function() {
+              return $location.hash(attrs.spy);
+            });
             return elem.addClass(attrs.spyClass);
           },
           out: function() {
